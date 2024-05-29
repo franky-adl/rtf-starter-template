@@ -4,8 +4,8 @@
   "description": "A starter template for react-three-fiber projects",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html --public-url ./"
+    "start": "rm -rf dist && parcel src/index.html --open",
+    "build": "rm -rf dist && parcel build src/index.html --public-url ./"
   },
   "author": "",
   "license": "ISC",

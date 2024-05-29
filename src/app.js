@@ -8,7 +8,7 @@ import { Stats, OrbitControls, Environment, ContactShadows } from '@react-three/
 import Sunset from "./assets/venice_sunset_1k.hdr"
 import snoiseImport from "./shaders/snoise3.glsl"
 
-export default App = () => {
+const App = () => {
     const ref = useRef()
     const state = useThree()
     const torus = useControls('Torus', {
@@ -55,3 +55,5 @@ export default App = () => {
         </mesh>
     </Fragment>)
 }
+
+export default App
