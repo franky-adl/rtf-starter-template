@@ -4,8 +4,8 @@
   "description": "A starter template for react-three-fiber projects",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "rm -rf dist && parcel src/index.html --open",
-    "build": "rm -rf dist && parcel build src/index.html --public-url ./"
+    "start": "rm -rf dist .parcel-cache && parcel src/index.html --open",
+    "build": "rm -rf dist .parcel-cache && parcel build src/index.html --public-url ./"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +21,6 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "styled-components": "^6.1.11",
-    "three": "^0.164.1"
+    "three": "0.x"
   }
 }
