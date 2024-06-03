@@ -5,6 +5,8 @@ void main() {
 
   gl_FragColor = vec4(vec3(1.0, uv), 1.0);
 
+  // automatically applies the tonemapping settings from the rtf canvas if same renderer is in use
+  #include <tonemapping_fragment>
   // transform color from linear colorSpace to sRGBColorSpace
-  gl_FragColor = linearToOutputTexel( gl_FragColor );
+  #include <colorspace_fragment>
 }
