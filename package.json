@@ -5,7 +5,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "rm -rf dist .parcel-cache && parcel src/index.html --open",
-    "build": "rm -rf dist .parcel-cache && parcel build src/index.html --public-url ./"
+    "build": "rm -rf dist .parcel-cache && parcel build src/index.html --public-url ./ --no-source-maps"
   },
   "author": "",
   "license": "ISC",
