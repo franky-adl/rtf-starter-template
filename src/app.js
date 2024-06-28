@@ -1,5 +1,5 @@
 import { Vector3 } from "three"
-import { Fragment, useRef, useEffect } from "react"
+import React, { Fragment, useRef, useEffect } from "react"
 import { useThree, useFrame } from "@react-three/fiber"
 import { useControls } from 'leva'
 // drei docs: https://github.com/pmndrs/drei
